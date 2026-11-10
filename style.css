@@ -1,93 +1,158 @@
-/* Name: M Saif ul Islam
- | Roll No: 26I-3020 |
-  Section: A */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: #020202;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
 }
 
-header h1 {
-  color: #00d4ff;
-  font-size: 48px;
-  margin-bottom: 5px;
-}
-
-.tagline {
-  font-size: 22px;
-  color: #34628b;
-  margin-top: 0;
-}
-
-.image-section img {
+/* Fixed Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  max-width: 600px;
-  border-radius: 20px;
-  margin: 20px 0;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
 }
 
-.table-section h2 {
-  color: #00d4ff;
-  font-size: 30px;
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 1.5px;
 }
 
-table {
-  width: 80%;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Page Sections */
+section {
+  min-height: 100vh;
+  padding: 7rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  border-collapse: collapse;
 }
 
-th {
-  background-color: #0066ff;
-  color: #ffffff;
-  padding: 12px;
-  border: 1px solid #00d4ff;
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
 }
 
-td {
-  padding: 12px;
-  border: 1px solid #00d4ff;
-  background-color: #0d1224;
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
 }
 
-.buy-section {
-  margin: 40px 0;
+p {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-button {
-  background-color: #16ca2b;
-  color: #11cd15;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 14px 50px;
-  border: none;
-  border-radius: 14px;
-  cursor: pointer;
+/* Image Gallery & Showcase Layout */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #00d4ff;
-  color: #000000;
+.image-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-footer {
-  margin-top: 40px;
-  color: #9aa0b0;
+.image-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
 }
 
-.logo {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border: 3px solid #00d4ff;
-  border-radius: 50%;
-  color: #cddfd4;
-  font-size: 28px;
-  font-weight: bold;
+.image-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card .card-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.image-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.image-card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Section Backgrounds */
+#home {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+}
+
+#about {
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+}
+
+#specifications {
+  background-color: #0b0f19;
+  border-top: 1px solid #1e293b;
 }
