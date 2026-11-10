@@ -1,0 +1,93 @@
+/* Name: M Saif ul Islam
+ | Roll No: 26I-3020 |
+  Section: A */
+
+body {
+  background-color: #020202;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  color: #00d4ff;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 22px;
+  color: #34628b;
+  margin-top: 0;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.table-section h2 {
+  color: #00d4ff;
+  font-size: 30px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0066ff;
+  color: #ffffff;
+  padding: 12px;
+  border: 1px solid #00d4ff;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #00d4ff;
+  background-color: #0d1224;
+}
+
+.buy-section {
+  margin: 40px 0;
+}
+
+button {
+  background-color: #16ca2b;
+  color: #11cd15;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 14px 50px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00d4ff;
+  color: #000000;
+}
+
+footer {
+  margin-top: 40px;
+  color: #9aa0b0;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid #00d4ff;
+  border-radius: 50%;
+  color: #cddfd4;
+  font-size: 28px;
+  font-weight: bold;
+}
